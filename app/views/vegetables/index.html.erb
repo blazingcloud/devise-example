@@ -1,0 +1,29 @@
+<h1>Listing vegetables</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price per unit</th>
+    <th>Unit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vegetables.each do |vegetable| %>
+  <tr>
+    <td><%= vegetable.name %></td>
+    <td><%= vegetable.description %></td>
+    <td><%= vegetable.price_per_unit %></td>
+    <td><%= vegetable.unit %></td>
+    <td><%= link_to 'Show', vegetable %></td>
+    <td><%= link_to 'Edit', edit_vegetable_path(vegetable) %></td>
+    <td><%= link_to 'Destroy', vegetable, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vegetable', new_vegetable_path %>

@@ -1,4 +1,6 @@
 HappyGoLuckyFarm::Application.routes.draw do
+  resources :vegetables
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

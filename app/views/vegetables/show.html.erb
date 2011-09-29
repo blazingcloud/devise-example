@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vegetable.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @vegetable.description %>
+</p>
+
+<p>
+  <b>Price per unit:</b>
+  <%= @vegetable.price_per_unit %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @vegetable.unit %>
+</p>
+
+
+<%= link_to 'Edit', edit_vegetable_path(@vegetable) %> |
+<%= link_to 'Back', vegetables_path %>
