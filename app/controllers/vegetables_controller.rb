@@ -1,4 +1,7 @@
 class VegetablesController < ApplicationController
+
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   # GET /vegetables
   # GET /vegetables.json
   def index
