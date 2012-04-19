@@ -31,10 +31,10 @@ shell prompt.
 
 ## Add the Devise gem:
 
-1. Open up 'Gemfile' in an editor, and add the line "gem 'devise'". Save the file.
+1. Open up 'Gemfile' in an editor, and add the line "gem 'devise'. Save the file.
 2. $ bundle # The output should include Devise and its dependencies
 3. $ rails generate --help # You should see some new generators that Devise has added
-4. $ devise:install
+4. $ rails generate devise:install
 5. Follow the instructions that are printed out by Devise. One of them will be to open
    up and look at the initializer for Devise. Feel free to change the email address
    that Devise will use, but it's not necessary since we won't really be sending
